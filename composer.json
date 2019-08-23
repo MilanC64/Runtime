@@ -1,0 +1,21 @@
+{
+    "name": "webops/runtime",
+    "description": "Package for mathematics calculations",
+    "type": "package",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "license": "mit",
+    "authors": [
+        {
+            "name": "MilanC64",
+            "email": "milansto80@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Webops\\Runtime\\": "src/"
+        }
+    }
+}
