@@ -3,7 +3,8 @@
     "description": "Package for mathematics calculations",
     "type": "package",
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "ext-bcmath": "*"
     },
     "license": "mit",
     "authors": [
@@ -12,7 +13,7 @@
             "email": "milansto80@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Webops\\Runtime\\": "src/"

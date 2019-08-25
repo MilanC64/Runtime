@@ -1,15 +1,19 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 require_once __DIR__ . '/vendor/autoload.php';
 
 use Webops\Runtime\Runtime;
-$runtime = new Runtime();
-$runtime->setStartTime(microtime(true));
-sleep(1);
-$runtime->setEndTime(microtime(true));
-$runtime->sec();
+use Webops\Runtime\SayHello;
 
-echo $runtime->getStartTime();
+$runtime = new Runtime();
+
+// Class example:
+// $runtime->setClass('Webops\Runtime\SayHello');
+// $runtime->setMethod('saySomethingALot');
+// $runtime->setArgs([1000, "Some really long and boaring sentence about the meaning of lifle and it's twists and turns.............."]);
+// echo $runtime->classMethodSec();
+
+// Object example:
+// $runtime->setObject(new SayHello);
+// $runtime->setMethod('sayHello');
+// echo $runtime->objMethodSec();
