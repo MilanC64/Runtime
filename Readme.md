@@ -1,7 +1,7 @@
 ### Version 0.1
 ---
 
-# Runtime
+**Runtime**
 
 ---
 
@@ -41,25 +41,36 @@ or you can: composer require webops/runtime with having in mind minimum stabilit
 
 **Usage:**
 
-1. Inside function or a method: use the sec() method
-Include it where you like, instaciate it with new Runtime, set the start and end time with $instance->setStartTime(microtime(true))
-and $instance->setEndTime(microtime(true)).
-Then to get runtime do $instance->sec();
+1. Inside function or a method: use the ```sec()``` method
+  * Include it where you like, 
+  * instaciate it with ```new Runtime```,
+  * set the start and end time with ```$instance->setStartTime(microtime(true))```,
+  * and ```$instance->setEndTime(microtime(true))```,
+  * Then to get runtime do ```$runtime->sec()```.
 
-2. From outside of an object: use the objMethodSec() method
-Include it where you like, instaciate it with new Runtime, set object with $runtime->setObject(new YourObject), set method with 
-$runtime->setMethod('yourMethodName'), set arguments if you have them with $runtime->setArgs(['array', $of, 'arguments']) and finaly
-run the $runtime->objMethodSec();
+2. From outside of an object: use the ```objMethodSec()``` method
+  * Include it where you like,
+  * instaciate it with ```new Runtime```,
+  * set object with ```$runtime->setObject(new YourObject)```,
+  * set method with ```$runtime->setMethod('yourMethodName')```,
+  * set arguments if you have them with ```$runtime->setArgs(['array', $of, 'arguments'])```,
+  * and finalyrun the ```$runtime->objMethodSec()```.
 
-3. Static methods inside a class: use the staticSec() method
-Include it where you like, instaciate it with new Runtime, set class with $runtime->setClass('Fully/Qualified/ClassName'), set method
-with $runtime->setMethod('yourMethodName'), set arguments if you have them with $runtime->setArgs(['array', $of, 'arguments']) and 
-finaly run the $runtime->staticSec();
+3. Static methods inside a class: use the ```staticSec()``` method
+  * Include it where you like,
+  * instaciate it with ```new Runtime```,
+  * set class with ```$runtime->setClass('Fully/Qualified/ClassName')```,
+  * set method with ```$runtime->setMethod('yourMethodName')```,
+  * set arguments if you have them with ```$runtime->setArgs(['array', $of, 'arguments'])```,
+  * and finaly run the ```$runtime->staticSec()```.
 
-4. Methods inside a class : use the classMethodSec() method
-Include it where you like, instaciate it with new Runtime, set class with $runtime->setClass('Fully/Qualified/ClassName'), set method
-with $runtime->setMethod('yourMethodName'), set arguments if you have them with $runtime->setArgs(['array', $of, 'arguments']) and 
-finaly run the $runtime->classMethodSec();
+4. Methods inside a class : use the ```classMethodSec()``` method
+  * Include it where you like,
+  * instaciate it with ```new Runtime```,
+  * set class with ```$runtime->setClass('Fully/Qualified/ClassName')```,
+  * set method with ```$runtime->setMethod('yourMethodName')```,
+  * set arguments if you have them with ```$runtime->setArgs(['array', $of, 'arguments'])```,
+  * and finaly run the ```$runtime->classMethodSec()```.
 
 ---
 
