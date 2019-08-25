@@ -43,14 +43,14 @@ or you can: composer require webops/runtime with having in mind minimum stabilit
 
 1. Inside function or a method: use the ```sec()``` method
   * Include it where you like, 
-  * instaciate it with ```new Runtime```,
+  * instanciate it with ```new Runtime```,
   * set the start and end time with ```$instance->setStartTime(microtime(true))```,
   * and ```$instance->setEndTime(microtime(true))```,
   * Then to get runtime do ```$runtime->sec()```.
 
 2. From outside of an object: use the ```objMethodSec()``` method
   * Include it where you like,
-  * instaciate it with ```new Runtime```,
+  * instanciate it with ```new Runtime```,
   * set object with ```$runtime->setObject(new YourObject)```,
   * set method with ```$runtime->setMethod('yourMethodName')```,
   * set arguments if you have them with ```$runtime->setArgs(['array', $of, 'arguments'])```,
@@ -58,7 +58,7 @@ or you can: composer require webops/runtime with having in mind minimum stabilit
 
 3. Static methods inside a class: use the ```staticSec()``` method
   * Include it where you like,
-  * instaciate it with ```new Runtime```,
+  * instanciate it with ```new Runtime```,
   * set class with ```$runtime->setClass('Fully/Qualified/ClassName')```,
   * set method with ```$runtime->setMethod('yourMethodName')```,
   * set arguments if you have them with ```$runtime->setArgs(['array', $of, 'arguments'])```,
@@ -66,7 +66,7 @@ or you can: composer require webops/runtime with having in mind minimum stabilit
 
 4. Methods inside a class : use the ```classMethodSec()``` method
   * Include it where you like,
-  * instaciate it with ```new Runtime```,
+  * instanciate it with ```new Runtime```,
   * set class with ```$runtime->setClass('Fully/Qualified/ClassName')```,
   * set method with ```$runtime->setMethod('yourMethodName')```,
   * set arguments if you have them with ```$runtime->setArgs(['array', $of, 'arguments'])```,
